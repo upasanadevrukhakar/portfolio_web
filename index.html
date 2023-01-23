@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p class="logo">UPASANA</p>
+                <!-- <img src="images/logo.png" alt="logo-image" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+
+
+            <div class="text-box ">
+                <p class="hello">Hello!</p>
+                <p class="para">I'M</p>
+                <h1>UPASANA <span>DEVRUKHAKAR</span></h1>
+                <!-- <h3>I HELP COMPANIES TO MAKE BEAUTIFUL WEBSITE.</h3>  -->
+                <h3>LET'S START YOUR NEW PROJECT TOGETHER</h3>
+
+
+                <div class="row bottom-para">
+
+                    <a href="#">Explore my Portfolio</a>
+                    <a href="#contact">Connect with Me & &#x27F6;</a>
+                    <!-- <span>Youcan explore more about And <br>my Personal  life experience Here</span> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="about">
+        <div class="container1 reveal">
+            <div class="trans-bg">
+                <div class="main-about">
+
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/about.jpeg" alt="">
+                        </div>
+
+                        <div class="about-col-2">
+                            <h2 class="sub-title">About Me</h2>
+                            <p>Hello!, This Upasana Devrukhakar. I have Done Diploma in Computer Enginnering From
+                                Dr.Babasaheb Ambedkar Technological University, Lonere.
+                                If i want to talk about my technical background then i am familier with html, css ,core
+                                php and
+                                beginer in javascript.using these core skills i could developed couple of project. to
+                                explore that
+                                projects you can refer 'My portfoio' section here.
+                                <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If You Have New Project
+                                Then please Don't hesitate to contact me.
+                            </p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                                <p class="tab-links " onclick="opentab( 'skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab( 'experience')">Projects</p>
+                            </div>
+
+
+                            <div class="tab-contents active-tab" id="education">
+                                <ul>
+                                    <li><span>2018 &nbsp;&nbsp; 10th</span><br> New English School Chandore <br>88.20%
+                                    </li>
+                                    <li><span>2021&nbsp;&nbspDiploma in Computer Engineering </span><br> Dr.Babasaheb
+                                        Ambedkar
+                                        Technological University, Lonere<br>91.7%
+
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="tab-contents" id="skills">
+                                <ul>
+                                    <li><span>HTML/CSS</span><br>70%</li>
+                                    <li><span>BOOTSTRAP</span><br>40%</li>
+                                    <li><span>CORE PHP</span><br>Beginer Level</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li>Travel and Tourism Website</li>
+                                    <li>Real Estate Bussiness</li>
+                                    <li>Developed couple landing pages</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+    <!-- --------------------portfolio----------- -->
+    <div id="portfolio">
+        <div class="container reveal">
+            <h2 class="sub-title">LATEST PROJECTS</h2>
+            <div class="work-list">
+                <div class="work">
+                    <a href=""><img src="images/booking.webp" alt="project-1"></a>
+                    <div class="layer">
+                        <h3>Travel and Tourism Website</h3>
+                        <!-- <p><a href="https://upasanadevrukhakar.github.io/portfolio_site/">Click Here to explore this one</a></p> -->
+                        <a href="https://upasanadevrukhakar.github.io/portfolio_site/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <a href=""><img src="images/frontpage3.jpeg" alt="project-2"></a>
+                    <div class="layer">
+                        <h3>Real Estate Bussiness</h3>
+                        <p>To be hosted</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <a href=""><img src="images/gallary1.jpeg" alt="project-3"></a>
+                    <div class="layer">
+                        <h3>Developed couple landing pages</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            provident unde.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ------------services section----------- -->
+    <div id="services">
+        <div class="container ">
+            <div class="sub-title">WHAT I CAN OFFER</div>
+            <div class="col-md-3">
+                <div class="services-list reveal ">
+
+                    <div class="services-1  services-part1">
+                        <div class="html-icon"><i class="fa-solid fa-code"></i></div>
+                        <h2>Frontend web Development</h2>
+                        <p>I Help companies to make beautiful Websitea and Grow thier online Bussiness</p>
+                        <a href="#">Learn More<i class="fa-sharp fa-solid fa-arrow-right-long"></i></a>
+
+                    </div>
+                    <div class="services-2 services-1  services-part2">
+                        <div class="html-icon"><i class="fa-s
+                            olid fa-crop-simple"></i></div>
+
+                        <h2></h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum tempora et odit blanditiis?
+                            Consectetur, sapiente?</p>
+                        <a href="#">Learn More<i class="fa-sharp fa-solid fa-arrow-right-long"></i></a>
+
+                    </div>
+                    <div class="services-3 services-1 services-part3">
+                        <div class="html-icon"><i class="fa-sharp fa-solid fa-user"></i></div>
+                        <h2>Freelacing</h2>
+                        <p>If You Have New Project ,You can contact me</p>
+                        <a href="#">Learn More<i class="fa-sharp fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+
+    <!-- --------------contact------------ -->
+    <div id="contact">
+        <div class="container reveal">
+            <div class="row">
+                <div class="contact-left">
+                    <h2> Contact Me</h2>
+                    <p><i class="fa-solid fa-paper-plane"></i>upasanadevrukhkar682@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>7498684158 / 7038377015</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2"> Download CV <i
+                            class="fa-sharp fa-solid fa-download"></i></a>
+                </div>
+                <div class="contact-right">
+                    <form action=" ">
+                        <input type="text" class="" name="Name" placeholder="Enter your name" required>
+                        <input type="email" class="" name="Email" placeholder=" Your Email" required>
+                        <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+                        <button type="button" class="btn btn2">Submit <i
+                                class="fa-sharp fa-solid fa-square-arrow-up-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ upasana, Made <i class="fa-solid fa-heart"></i>with by Upasana Devrukhakar</p>
+        </div>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+        </script>
+
+
+
+</body>
+
+</html>
