@@ -93,7 +93,7 @@ nav ul li a:hover::after {
     margin-left: -10px;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
-    background-image: url(/images/back.png);
+    background-image: url(images/back.png);
     -webkit-background-clip: text;
 
     background-position: 0 0;
